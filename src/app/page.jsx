@@ -39,6 +39,7 @@ const page = () => {
               <p>
                 {each.body ? each.body.split("").slice(0, 99).join("") : ""}
               </p>
+              {/* // */}
             </div>
             <div>
               <span className="font-bold">
