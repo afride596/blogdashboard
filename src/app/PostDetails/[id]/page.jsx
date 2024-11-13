@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
-import userContext from "./src/context/userContext.jsx";
+import userContext from "src/context/UserContext";
 const PostDetails = () => {
   const [comments, setComments] = useState([]);
 
@@ -17,6 +17,7 @@ const PostDetails = () => {
   const [post, setPost] = useState(null);
   useEffect(() => {
     fechcomment();
+
   }, []);
   useEffect(() => {
     if (param.id)

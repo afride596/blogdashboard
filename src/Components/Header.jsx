@@ -2,7 +2,7 @@
 import Image from "next/image";
 import image from "../app/design.png";
 import { useEffect, useContext } from "react";
-import userContext from "./src/context/userContext.jsx";
+import userContext from "../context/UserContext";
 import Link from "next/link";
 
 const Header = () => {
@@ -36,10 +36,12 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-black w-full h-20 text-white flex justify-between px-2 items-center">
+    <div className="bg-black w-full h-20 text-white flex justify-between px-2 items-center">
+
       <div className="pl-4">
         <Image className="w-10" src={image} alt="Logo" width={40} height={40} />
       </div>
+    <nav className="flex items-center justify-between">
       <div>
         <ul className="flex justify-between items-center gap-4 font-medium text-lg">
           <Link href="/">
@@ -68,6 +70,7 @@ const Header = () => {
         </ul>
       </div>
     </nav>
+    </div>
   );
 };
 
