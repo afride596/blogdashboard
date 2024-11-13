@@ -36,13 +36,12 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-black w-full h-20 text-white flex justify-between px-2 items-center">
-
-      <div className="pl-4">
-        <Image className="w-10" src={image} alt="Logo" width={40} height={40} />
+    <div className=" flex  border w-full justify-between ">
+      <div className="pl-4 ">
+        <Image className="w-20" src={image} alt="Logo" width={40} height={40} />
       </div>
-    <nav className="flex items-center justify-between">
-      <div>
+
+      <nav className="flex justify-end">
         <ul className="flex justify-between items-center gap-4 font-medium text-lg">
           <Link href="/">
             <li>Home</li>
@@ -68,8 +67,7 @@ const Header = () => {
             </select>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
     </div>
   );
 };

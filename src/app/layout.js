@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
     >
       <html lang="en">
         <body>
-          <Header>
+          <header className="bg-black shadow-xl text-white  w-full h-20 flex justify-between px-2 items-center">
             <Header />
-          </Header>
+          </header>
           <main className="flex flex-wrap gap-6 my-4 mx-4">{children}</main>
           {/* // */}
           <footer className="w-full fixed -bottom-1 h-14 border font-bold bg-[#635d5d] text-white flex justify-center items-center">
