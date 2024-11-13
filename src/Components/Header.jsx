@@ -2,7 +2,7 @@
 import Image from "next/image";
 import image from "../app/design.png";
 import { useEffect, useContext } from "react";
-import userContext from "@/context/userContext";
+import userContext from "./src/context/userContext.jsx";
 import Link from "next/link";
 
 const Header = () => {

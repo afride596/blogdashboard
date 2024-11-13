@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
-import userContext from "@/context/userContext";
+import userContext from "./src/context/userContext.jsx";
 const PostDetails = () => {
   const [comments, setComments] = useState([]);
 

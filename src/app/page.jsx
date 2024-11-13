@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useContext } from "react";
-import userContext from "@/context/userContext";
+import userContext from "./src/context/userContext.jsx";
 import { useState } from "react";
 import Link from "next/link";
 

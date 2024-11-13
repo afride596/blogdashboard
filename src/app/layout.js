@@ -1,8 +1,8 @@
 "use client";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/Components/Header";
-import userContext from "@/context/userContext";
+import Header from ".src/Components/Header";
+import userContext from "./src/context/userContext.jsx";
 import { useState } from "react";
 
 export default function RootLayout({ children }) {
